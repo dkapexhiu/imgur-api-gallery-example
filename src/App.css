@@ -1,0 +1,26 @@
+body {
+  background-color:#fff;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D62929;
+}
+
+.container {
+  margin: 0 100px 0 100px;
+}
+
+.grid {
+  padding: 0 50px 0 50px;
+}

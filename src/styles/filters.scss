@@ -1,0 +1,91 @@
+.filter_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .filter_button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  
+      > div:first-child {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+  
+        .p-button {
+          background: none;
+          color: blueviolet;
+          border: none;
+          border-radius: 50px;
+  
+          &.active {
+            background: green;
+            color: white;
+            border-radius: 50px;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+          &:focus-visible {
+            border: none;
+            border-radius: 50px;
+          }
+        }
+      }
+  
+      .trending_button {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+  
+        .p-button {
+          background: white;
+          color: blueviolet;
+          border: solid 2px rgb(181, 179, 179);
+          border-radius: 50px;
+  
+          &.active {
+            background: green;
+            color: white;
+            border-radius: 50px;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+          &:focus-visible {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+.dropdown_menu {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .filter_button {
+    flex-direction: column;
+  > div:first-child {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 0!important;
+  } 
+  }
+  .filter_bar {
+    .filter_button {
+      margin-top: 10px!important;
+      margin-bottom: 10px!important;
+    }
+  }
+
+}

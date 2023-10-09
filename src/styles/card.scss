@@ -1,0 +1,25 @@
+.card {
+    padding: 0;
+}
+.p-card .p-card-body {
+    background-color: green;
+    color: greenyellow;
+    text-align: left;
+}
+
+.p-button.p-button-text{
+    color: greenyellow;
+    padding-left: 0;
+}
+.p-button.p-button-text:active, .p-button.p-button-text:enabled:hover{
+   color: rgb(153, 153, 153);
+   background: none;
+}
+
+.card_buttons .p-button:focus{
+    box-shadow: none;
+}
+
+.p-card .p-card-content {
+    padding: 0;
+}

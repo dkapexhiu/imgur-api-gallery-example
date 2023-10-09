@@ -1,0 +1,17 @@
+.paginator {
+    position: fixed;
+    top: 90%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: -webkit-inline-box;
+}
+
+@media screen and (max-width: 640px) {
+    .paginator {
+      top: 80%;
+    }
+  }
+
+.button {
+  width: 100px;
+}
